@@ -1,0 +1,40 @@
+services:
+  probaar-revamp-dev:
+    container_name: probaar-revamp-dev
+    build:
+      context: .
+      dockerfile: ./docker/development/Dockerfile
+      args:
+        - USER_ID=${UID:?Try exporting it with `export UID GID` in your .bashrc}
+        - GROUP_ID=${GID:?Try exporting it with `export UID GID` in your .bashrc}
+    entrypoint: ./docker/development/entrypoint.sh
+    command: python manage.py runserver 0.0.0.0:80
+    ports:
+      - '8001:80'
+    env_file:
+      - ./.env
+    volumes:
+      - .:/usr/src/app/
+    depends_on:
+      - probaar-revamp-dev-db
+
+
+  probaar-revamp-dev-db:
+    image: postgis/postgis:12-3.2-alpine
+    container_name: probaar-revamp-dev-db
+    env_file:
+      - ./.env
+    ports:
+      - '5433:5433'
+    environment:
+      - POSTGRES_DB=probaarhoreca
+      - POSTGRES_USER=probaarhorecauser
+      - POSTGRES_PASSWORD=pg-secret
+      - POSTGRES_PORT=5433
+
+  probaar-revamp-dev-redis:
+    image: redis:7.4.0-alpine
+    container_name: probaar-revamp-dev-redis
+    ports:
+      - '6380:6380'
+
