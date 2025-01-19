@@ -1,0 +1,10 @@
+[phases.setup]
+aptPkgs = [
+    "gettext",
+    "tzdata",
+    "binutils",
+    "libproj-dev",
+    "gdal-bin"
+]
+
+[environment]
