@@ -8,3 +8,4 @@ aptPkgs = [
 ]
 
 [environment]
+GDAL_LIBRARY_PATH = "/usr/lib/libgdal.so"
