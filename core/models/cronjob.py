@@ -44,13 +44,6 @@ class CronJob(models.Model):
         help_text=_("Whether this cron job is active")
     )
 
-    notes: str = models.CharField(
-        max_length=100,
-        null=True,
-        verbose_name=_("notes"),
-        help_text=_("Notes of the cron job")
-    )
-
     class Meta:
         ordering = ['type']
         verbose_name = _("Cron Job")

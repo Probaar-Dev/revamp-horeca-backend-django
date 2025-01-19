@@ -1,3 +1,5 @@
+from django.utils.translation import gettext_lazy as _
+
 """
 Django settings for horeca project.
 
@@ -41,12 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'core',
+    'shipping'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -79,17 +83,34 @@ WSGI_APPLICATION = 'horeca.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ["PGDATABASE"],
-        'USER': os.environ["PGUSER"],
-        'PASSWORD': os.environ["PGPASSWORD"],
-        'HOST': os.environ["PGHOST"],
-        'PORT': os.environ["PGPORT"],
-    }
+database_settings = {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': os.environ["PGDATABASE"],
+    'USER': os.environ["PGUSER"],
+    'PASSWORD': os.environ["PGPASSWORD"],
+    'HOST': os.environ["PGHOST"],
+    'PORT': os.environ["PGPORT"],
 }
 
+# Check if we are in a test environment or running management commands
+if os.getenv('USE_MOCK_DB', 'False') == 'True':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': ':memory:',
+        }
+    }
+else:
+    # We use postgis backend to support additional GIS features
+    database_settings['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+
+    # See <https://docs.djangoproject.com/en/4.2/ref/databases/#persistent-connections>
+    database_settings['CONN_MAX_AGE'] = None  # Removed extra space
+    database_settings['CONN_HEALTH_CHECKS'] = True
+
+    DATABASES = {
+        'default': database_settings,
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -113,14 +134,24 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Lima'
+
+LANGUAGES = [
+    ('es', _('Spanish')),
+    ('en', _('English')),
+]
+
+USE_L10N = True
 
 USE_I18N = True
 
 USE_TZ = True
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

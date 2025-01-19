@@ -1,0 +1,683 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-18 20:48-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/models/cronjob.py:21
+msgid "all_sync_odoo"
+msgstr "Sincronización Completa con Odoo y indices"
+
+#: core/models/cronjob.py:22
+msgid "rebuild_index"
+msgstr "Reconstruir ES indices"
+
+#: core/models/cronjob.py:23
+msgid "compliance_morning"
+msgstr "Reporte de cumplimiento de la mañana"
+
+#: core/models/cronjob.py:24
+msgid "compliance_afternoon"
+msgstr "Reporte de cumplimiento de la tarde"
+
+#: core/models/cronjob.py:31
+msgid "description"
+msgstr ""
+
+#: core/models/cronjob.py:32
+msgid "Description of the cron job"
+msgstr ""
+
+#: core/models/cronjob.py:35
+msgid "Cron Job Type"
+msgstr "Tipo de Acción Programada"
+
+#: core/models/cronjob.py:38
+msgid "Type of cron job to execute"
+msgstr ""
+
+#: core/models/cronjob.py:43
+msgid "active"
+msgstr ""
+
+#: core/models/cronjob.py:44
+msgid "Whether this cron job is active"
+msgstr ""
+
+#: core/models/cronjob.py:49
+msgid "Cron Job"
+msgstr "Acción Programada"
+
+#: core/models/cronjob.py:50
+msgid "Cron Jobs"
+msgstr "Acciones Programadas"
+
+#: horeca/settings.py:124
+msgid "Spanish"
+msgstr ""
+
+#: horeca/settings.py:125
+msgid "English"
+msgstr ""
+
+#~ msgid "org_type_business"
+#~ msgstr "Persona jurídica"
+
+#~ msgid "org_type_person"
+#~ msgstr "Persona natural"
+
+#~ msgid "block_reason_general"
+#~ msgstr "Otras"
+
+#~ msgid "block_reason_payment"
+#~ msgstr "Falta de Pago"
+
+#, fuzzy
+#~| msgid "block_reason_payment"
+#~ msgid "block_reason_verification_pending"
+#~ msgstr "Falta de Pago"
+
+#, fuzzy
+#~| msgid "block_reason_payment"
+#~ msgid "unblock_reason_payment"
+#~ msgstr "Falta de Pago"
+
+#, fuzzy
+#~| msgid "block_reason_general"
+#~ msgid "unblock_reason_temporal_unblock"
+#~ msgstr "Otras"
+
+#~ msgid "Blocking Reason"
+#~ msgstr "Razón de bloqueo"
+
+#, fuzzy
+#~| msgid "Blocking Reason"
+#~ msgid "Unblocking Reason"
+#~ msgstr "Razón de bloqueo"
+
+#~ msgid "price list"
+#~ msgstr "Lista de precios"
+
+#, fuzzy
+#~| msgid "payment_file"
+#~ msgid "payment term"
+#~ msgstr "Archivo de Pago"
+
+#~ msgid "type"
+#~ msgstr "Tipo"
+
+#~ msgid "commercial name"
+#~ msgstr "Nombre comercial"
+
+#~ msgid "legal name"
+#~ msgstr "Nombre legal"
+
+#~ msgid "document type"
+#~ msgstr "Tipo de documento"
+
+#~ msgid "document number"
+#~ msgstr "Número de documento"
+
+#~ msgid "days_before_blocking"
+#~ msgstr "Numero de dias antes de bloqueo luego de vencimiento"
+
+#, fuzzy
+#~| msgid "Couldn't create new shipping address."
+#~ msgid "default shipping address"
+#~ msgstr "No se pudo crear nueva dirección de envío."
+
+#~ msgid "user"
+#~ msgstr "usuario"
+
+#~ msgid "monday"
+#~ msgstr "lunes"
+
+#~ msgid "tuesday"
+#~ msgstr "martes"
+
+#~ msgid "wednesday"
+#~ msgstr "miércoles"
+
+#~ msgid "thursday"
+#~ msgstr "jueves"
+
+#~ msgid "friday"
+#~ msgstr "viernes"
+
+#~ msgid "saturday"
+#~ msgstr "sábado"
+
+#~ msgid "sunday"
+#~ msgstr "domingo"
+
+#~ msgid "bar"
+#~ msgstr "Bar"
+
+#~ msgid "discotek"
+#~ msgstr "Discoteca"
+
+#~ msgid "restaurant"
+#~ msgstr "Restaurante"
+
+#~ msgid "store"
+#~ msgstr "Tienda"
+
+#~ msgid "general"
+#~ msgstr "general"
+
+#, fuzzy
+#~| msgid "section"
+#~ msgid "user restriction"
+#~ msgstr "sección"
+
+#, fuzzy
+#~| msgid "sections"
+#~ msgid "user restrictions"
+#~ msgstr "secciones"
+
+#~ msgid "category"
+#~ msgstr "Categoría"
+
+#~ msgid "quantity"
+#~ msgstr "Cantidad"
+
+#, fuzzy
+#~| msgid "saturday"
+#~ msgid "featured"
+#~ msgstr "sábado"
+
+#~ msgid "Payment_verified"
+#~ msgstr "Pago Verificado"
+
+#, fuzzy
+#~| msgid "Sales"
+#~ msgid "Sale"
+#~ msgstr "Ventas"
+
+#~ msgid "payment_file"
+#~ msgstr "Archivo de Pago"
+
+#~ msgid "Name"
+#~ msgstr "Nombre"
+
+#~ msgid "Options"
+#~ msgstr "Opciones"
+
+#~ msgid "No information."
+#~ msgstr "No hay información."
+
+#, fuzzy
+#~| msgid "saturday"
+#~ msgid "Featured"
+#~ msgstr "sábado"
+
+#~ msgid "Customer"
+#~ msgstr "Cliente"
+
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#~ msgid "User"
+#~ msgstr "Usuario"
+
+#~ msgid "Cannot delete dispatch address Place"
+#~ msgstr "No se puede eliminar un local que sea dirección de despacho"
+
+#~ msgid "There is already a draft move for this place"
+#~ msgstr "Ya existe un inventario en borrador para este local"
+
+#~ msgid "Move is not in draft state and cannot be modified"
+#~ msgstr "El inventario no está en borrador y no puede ser modificado"
+
+#~ msgid "Move is not in draft state"
+#~ msgstr "El inventario no está en borrador"
+
+#~ msgid "new_quantity"
+#~ msgstr "Inventario nuevo"
+
+#~ msgid "previous_quantity"
+#~ msgstr "Inventario anterior"
+
+#~ msgid "unit_price"
+#~ msgstr "Costo referencial (s/IGV)"
+
+#~ msgid "previous_valued_price"
+#~ msgstr "Valorizado anterior"
+
+#~ msgid "valued_price"
+#~ msgstr "Valorizado"
+
+#~ msgid "difference"
+#~ msgstr "Variación"
+
+#~ msgid "total_value"
+#~ msgstr "Valor total"
+
+#~ msgid "date_creation"
+#~ msgstr "fecha de creación"
+
+#~ msgid "item_move"
+#~ msgstr "movimiento de item"
+
+#~ msgid "move"
+#~ msgstr "movimiento de item"
+
+#~ msgid "section"
+#~ msgstr "sección"
+
+#~ msgid "label name"
+#~ msgstr "nombre de label"
+
+#~ msgid "zone"
+#~ msgstr "zona"
+
+#~ msgid "org"
+#~ msgstr "organización"
+
+#, fuzzy
+#~| msgid "created by"
+#~ msgid "created_by"
+#~ msgstr "creado por"
+
+#, fuzzy
+#~| msgid "date_creation"
+#~ msgid "date_deactivation"
+#~ msgstr "fecha de creación"
+
+#~ msgid "sections"
+#~ msgstr "secciones"
+
+#~ msgid "detail"
+#~ msgstr "detalle"
+
+#~ msgid "label_name"
+#~ msgstr "Producto"
+
+#~ msgid "zone_name"
+#~ msgstr "Zona"
+
+#~ msgid "section_name"
+#~ msgstr "Sección"
+
+#~ msgid "parent_category"
+#~ msgstr "Categoría padre"
+
+#~ msgid "January"
+#~ msgstr "enero"
+
+#~ msgid "February"
+#~ msgstr "febrero"
+
+#~ msgid "March"
+#~ msgstr "marzo"
+
+#~ msgid "April"
+#~ msgstr "abril"
+
+#~ msgid "May"
+#~ msgstr "mayo"
+
+#~ msgid "June"
+#~ msgstr "junio"
+
+#~ msgid "July"
+#~ msgstr "julio"
+
+#~ msgid "August"
+#~ msgstr "agosto"
+
+#~ msgid "September"
+#~ msgstr "septiembre"
+
+#~ msgid "October"
+#~ msgstr "octubre"
+
+#~ msgid "November"
+#~ msgstr "noviembre"
+
+#~ msgid "December"
+#~ msgstr "diciembre"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name:"
+#~ msgstr "Nombre:"
+
+#~ msgid "Place:"
+#~ msgstr "Local:"
+
+#~ msgid "Date:"
+#~ msgstr "Fecha:"
+
+#, fuzzy
+#~| msgid "type"
+#~ msgid "tag_type"
+#~ msgstr "Tipo"
+
+#~ msgid ""
+#~ "Please enter a correct username and password. Note that both fields may "
+#~ "be case-sensitive."
+#~ msgstr "Por favor, ingrese un usuario y una contraseña correcta."
+
+#~ msgid "This account is blocked due to lack of payment."
+#~ msgstr ""
+#~ "Al parecer su cuenta esta bloqueada por un atraso en las facturas de "
+#~ "pago. Comuníquese con su ejecutivo comercial."
+
+#~ msgid "This account is blocked."
+#~ msgstr "Esta cuenta esta bloqueada. Comuníquese con su ejecutivo comercial."
+
+#, fuzzy
+#~| msgid "created by"
+#~ msgid "related_word"
+#~ msgstr "creado por"
+
+#, fuzzy
+#~| msgid "type"
+#~ msgid "tag type"
+#~ msgstr "Tipo"
+
+#~ msgid "full_name_contains"
+#~ msgstr "Nombre completo contiene"
+
+#~ msgid "email_contains"
+#~ msgstr "Email contiene"
+
+#~ msgid "Autogenerate orgcode"
+#~ msgstr "Autogenerar orgcode"
+
+#~ msgid "Legal name is required for businesses."
+#~ msgstr "Nombre legal es requerido para personas jurídicas."
+
+#~ msgid "Commercial name is required for businesses."
+#~ msgstr "Nombre comercial es requerido para personas jurídicas."
+
+#~ msgid "First name is required for individuals."
+#~ msgstr "Nombre es requerido para personas naturales."
+
+#~ msgid "Last name is required for individuals."
+#~ msgstr "Apellido es requerido para personas naturales."
+
+#~ msgid "Orgcode is required."
+#~ msgstr "Orgcode es requerido."
+
+#~ msgid "Model"
+#~ msgstr "Modelo"
+
+#~ msgid "Select the model to restrict."
+#~ msgstr "Selecciona el modelo"
+
+#~ msgid "Object to restrict"
+#~ msgstr "Objeto a restringir"
+
+#~ msgid "Select the specific object to restrict."
+#~ msgstr "Selecciona el objeto específco a restringir"
+
+#, fuzzy
+#~| msgid "Sale does not exist"
+#~ msgid "The object does not exist."
+#~ msgstr "Venta no existe"
+
+#~ msgid "Both content type and object id are required."
+#~ msgstr "El modelo y el objecto son requeridos"
+
+#~ msgid "Description"
+#~ msgstr "Descripción"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "Phone"
+#~ msgstr "Celular"
+
+#~ msgid "Log in"
+#~ msgstr "Ingresar"
+
+#, fuzzy
+#~| msgid "Your password has been set. You may go ahead and log in now."
+#~ msgid "Your password has been set.  You may go ahead and log in now."
+#~ msgstr "Tu contraseña ha sido establecida."
+
+#~ msgid "Enter your new password twice to restore your account."
+#~ msgstr "Ingresa tu nueva contraseña dos veces para restaurar tu cuenta."
+
+#~ msgid "Change password"
+#~ msgstr "Cambiar contraseña"
+
+#, fuzzy
+#~| msgid ""
+#~| "The password reset link was invalid, possibly because it has already "
+#~| "been used. Please request a new password reset."
+#~ msgid ""
+#~ "The password reset link was invalid, possibly because it has already been "
+#~ "used.  Please request a new password reset."
+#~ msgstr ""
+#~ "El link de reseteo de contraseña es inválido, posiblemente porque ya fue "
+#~ "usado. Por favor, genera un nuevo link por medio del app."
+
+#~ msgid "Password reset"
+#~ msgstr "Restablecer de contraseña"
+
+#~ msgid ""
+#~ "We've emailed you instructions for setting your password, if an account "
+#~ "exists with the email you entered. You should receive them shortly."
+#~ msgstr ""
+#~ "Le enviamos instrucciones por email para restablecer la contraseña. "
+#~ "Debería recibirlas en breve en su bandeja."
+
+#~ msgid ""
+#~ "You're receiving this email because you requested a password reset for "
+#~ "your user account at"
+#~ msgstr ""
+#~ "Estás recibiendo este correo electrónico porque solicitaste restablecer "
+#~ "la contraseña de tu cuenta de usuario en"
+
+#~ msgid "Please go to the following page and choose a new password:"
+#~ msgstr "Por favor, ve a la siguiente página y elige una nueva contraseña:"
+
+#~ msgid "Your username, in case you've forgotten:"
+#~ msgstr "Tu nombre de usuario, en caso de que lo hayas olvidado:"
+
+#~ msgid "Thanks for using our site!"
+#~ msgstr "Gracias por usar nuestra app!"
+
+#, python-format
+#~ msgid ""
+#~ "You're receiving this email because you requested a password reset for "
+#~ "your user account at %(company_name)s."
+#~ msgstr ""
+#~ "Estás recibiendo este correo electrónico porque solicitaste restablecer "
+#~ "la contraseña de tu cuenta de usuario en %(company_name)s."
+
+#~ msgid "Sales"
+#~ msgstr "Ventas"
+
+#~ msgid "Districts"
+#~ msgstr "Distritos"
+
+#, fuzzy
+#~| msgid "Districts"
+#~ msgid "District groups"
+#~ msgstr "Distritos"
+
+#~ msgid "Cronjob not implemented"
+#~ msgstr "Cronjob no implementado o inactivo."
+
+#~ msgid "Cronjob is running"
+#~ msgstr ""
+#~ "La acción programada se esta ejecutando. No es posible ejecutar otra."
+
+#~ msgid "Cronjob has started"
+#~ msgstr ""
+#~ "La acción programada ha iniciado correctamente. Recibirás una "
+#~ "notificación en tu correo cuando acabe,"
+
+#~ msgid "Sale does not exist"
+#~ msgstr "Venta no existe"
+
+#~ msgid "Sale is already verified"
+#~ msgstr "Venta ya esta verificada"
+
+#, fuzzy
+#~| msgid "Sale is already verified"
+#~ msgid "Sale is already sent to odoo"
+#~ msgstr "Venta ya esta verificada"
+
+#~ msgid "delivery_date_not_set_fallback_notice"
+#~ msgstr ""
+#~ "El usuario no escogió fecha de delivery, se usó la primera disponible: "
+
+#~ msgid "user_delivery_date_not_used_notice"
+#~ msgstr ""
+#~ "No se utilizó la fecha de delivery del usuario debido a un retraso en la "
+#~ "verificación. "
+
+#~ msgid "Sale has been verified"
+#~ msgstr "Venta ha sido verificada"
+
+#~ msgid "Organization not found."
+#~ msgstr "Organización no encontrada"
+
+#~ msgid "Couldn't create new shipping address."
+#~ msgstr "No se pudo crear nueva dirección de envío."
+
+#, fuzzy
+#~| msgid "Couldn't create new shipping address."
+#~ msgid "Couldn't set default shipping address."
+#~ msgstr "No se pudo crear nueva dirección de envío."
+
+#~ msgid "Your password has been set. You may go ahead and log in now."
+#~ msgstr "Tu contraseña ha sido establecida."
+
+#~ msgid ""
+#~ "The password reset link was invalid, possibly because it has already been "
+#~ "used. Please request a new password reset."
+#~ msgstr ""
+#~ "El link de reseteo de contraseña es inválido, posiblemente porque ya fue "
+#~ "usado. Por favor, genera un nuevo link por medio del app."
+
+#~ msgid ""
+#~ "You're receiving this email because you requested a password reset for "
+#~ "your user account at\n"
+#~ "    Probaar."
+#~ msgstr ""
+#~ "Estás recibiendo este correo electrónico porque solicitaste restablecer "
+#~ "la contraseña de tu cuenta de usuario en\n"
+#~ "    Probaar."
+
+#, fuzzy
+#~| msgid ""
+#~| "You're receiving this email because you requested a password reset for "
+#~| "your user account at Probaar."
+#~ msgid ""
+#~ "You're receiving this email because you requested a password reset for "
+#~ "your user account at\n"
+#~ "Probaar."
+#~ msgstr ""
+#~ "Estás recibiendo este correo electrónico porque solicitaste restablecer "
+#~ "la contraseña de tu cuenta de usuario en Probaar."
+
+#~ msgid "Probaar Team"
+#~ msgstr "Equipo Probaar"
+
+#~ msgid "Password reset on Probaar"
+#~ msgstr "Restablecimiento de contraseña - Probaar"
+
+#, fuzzy
+#~| msgid "Password reset"
+#~ msgid "password-reset/complete/"
+#~ msgstr "Restablecer de contraseña"
+
+#~ msgid "District"
+#~ msgstr "Distrito"
+
+#, fuzzy
+#~| msgid "Districts"
+#~ msgid "districts"
+#~ msgstr "Distritos"
+
+#, fuzzy
+#~| msgid "District"
+#~ msgid "District Group"
+#~ msgstr "Distrito"
+
+#, fuzzy
+#~| msgid "Districts"
+#~ msgid "District Groups"
+#~ msgstr "Distritos"
+
+#, fuzzy
+#~| msgid "type"
+#~ msgid "tag_types"
+#~ msgstr "Tipo"
+
+#, fuzzy
+#~| msgid "monday"
+#~ msgid "Monday"
+#~ msgstr "lunes"
+
+#, fuzzy
+#~| msgid "tuesday"
+#~ msgid "Tuesday"
+#~ msgstr "martes"
+
+#, fuzzy
+#~| msgid "wednesday"
+#~ msgid "Wednesday"
+#~ msgstr "miércoles"
+
+#, fuzzy
+#~| msgid "thursday"
+#~ msgid "Thursday"
+#~ msgstr "jueves"
+
+#, fuzzy
+#~| msgid "friday"
+#~ msgid "Friday"
+#~ msgstr "viernes"
+
+#, fuzzy
+#~| msgid "saturday"
+#~ msgid "Saturday"
+#~ msgstr "sábado"
+
+#, fuzzy
+#~| msgid "sunday"
+#~ msgid "Sunday"
+#~ msgstr "domingo"
+
+#~ msgid "Date"
+#~ msgstr "Fecha"
+
+#, fuzzy
+#~| msgid "total cost"
+#~ msgid "total_cost"
+#~ msgstr "costo total"
+
+#~ msgid "positive"
+#~ msgstr "positivo"
+
+#, fuzzy
+#~| msgid "discotek"
+#~ msgid "Discount"
+#~ msgstr "Discoteca"
+
+#~ msgid "Legal entity"
+#~ msgstr "Persona jurídica"
+
+#~ msgid "Natural person"
+#~ msgstr "Persona natural"

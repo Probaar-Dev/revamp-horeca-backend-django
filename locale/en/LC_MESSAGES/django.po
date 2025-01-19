@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-18 20:48-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/models/cronjob.py:21
+msgid "all_sync_odoo"
+msgstr "Full Sync with Odoo and indexes"
+
+#: core/models/cronjob.py:22
+msgid "rebuild_index"
+msgstr "Rebuild ES Index"
+
+#: core/models/cronjob.py:23
+msgid "compliance_morning"
+msgstr "Morning Compliance Report"
+
+#: core/models/cronjob.py:24
+msgid "compliance_afternoon"
+msgstr "Afternoon Compliance Report"
+
+#: core/models/cronjob.py:31
+msgid "description"
+msgstr ""
+
+#: core/models/cronjob.py:32
+msgid "Description of the cron job"
+msgstr ""
+
+#: core/models/cronjob.py:35
+msgid "Cron Job Type"
+msgstr ""
+
+#: core/models/cronjob.py:38
+msgid "Type of cron job to execute"
+msgstr ""
+
+#: core/models/cronjob.py:43
+msgid "active"
+msgstr ""
+
+#: core/models/cronjob.py:44
+msgid "Whether this cron job is active"
+msgstr ""
+
+#: core/models/cronjob.py:49
+msgid "Cron Job"
+msgstr ""
+
+#: core/models/cronjob.py:50
+msgid "Cron Jobs"
+msgstr ""
+
+#: horeca/settings.py:124
+msgid "Spanish"
+msgstr ""
+
+#: horeca/settings.py:125
+msgid "English"
+msgstr ""
+
+#~ msgid "org_type_business"
+#~ msgstr "Legal person"
+
+#~ msgid "org_type_person"
+#~ msgstr "Natural person"
+
+#~ msgid "block_reason_general"
+#~ msgstr "Others"
+
+#~ msgid "block_reason_payment"
+#~ msgstr "Lack of Payment"
+
+#, fuzzy
+#~| msgid "block_reason_payment"
+#~ msgid "block_reason_verification_pending"
+#~ msgstr "Lack of Payment"
+
+#, fuzzy
+#~| msgid "block_reason_payment"
+#~ msgid "unblock_reason_payment"
+#~ msgstr "Lack of Payment"
+
+#, fuzzy
+#~| msgid "block_reason_general"
+#~ msgid "unblock_reason_temporal_unblock"
+#~ msgstr "Others"
+
+#~ msgid "days_before_blocking"
+#~ msgstr "Days before blocking after due date"
+
+#, fuzzy
+#~| msgid "section"
+#~ msgid "user restriction"
+#~ msgstr "zone section"
+
+#, fuzzy
+#~| msgid "sections"
+#~ msgid "user restrictions"
+#~ msgstr "zone sections"
+
+#~ msgid "quantity"
+#~ msgstr "Quantity"
+
+#~ msgid "Delivery date"
+#~ msgstr "Fecha de entrega"
+
+#~ msgid "Creation date"
+#~ msgstr "Creación"
+
+#~ msgid "new_quantity"
+#~ msgstr "New quantity"
+
+#~ msgid "previous_quantity"
+#~ msgstr "Previous quantity"
+
+#~ msgid "unit_price"
+#~ msgstr "Unit price (no IGV)"
+
+#~ msgid "previous_valued_price"
+#~ msgstr "Previous valued price"
+
+#~ msgid "valued_price"
+#~ msgstr "Valued price"
+
+#~ msgid "difference"
+#~ msgstr "Diferencia"
+
+#~ msgid "total_value"
+#~ msgstr "Valor total"
+
+#~ msgid "date_creation"
+#~ msgstr "date creation"
+
+#~ msgid "section"
+#~ msgstr "zone section"
+
+#~ msgid "org"
+#~ msgstr "organization"
+
+#~ msgid "created_by"
+#~ msgstr "created by"
+
+#, fuzzy
+#~| msgid "date_creation"
+#~ msgid "date_deactivation"
+#~ msgstr "date creation"
+
+#~ msgid "sections"
+#~ msgstr "zone sections"
+
+#~ msgid "label_name"
+#~ msgstr "Producto"
+
+#~ msgid "zone_name"
+#~ msgstr "Zona"
+
+#~ msgid "section_name"
+#~ msgstr "Sección"
+
+#~ msgid "parent_category"
+#~ msgstr "Parent category"
+
+#~ msgid "This account is blocked due to lack of payment."
+#~ msgstr ""
+#~ "Your account is blocked due a lack of payment of invoices. Call your "
+#~ "sales executive."
+
+#, fuzzy
+#~| msgid "created_by"
+#~ msgid "related_word"
+#~ msgstr "created by"
+
+#~ msgid "full_name_contains"
+#~ msgstr "Fullname contains"
+
+#~ msgid "email_contains"
+#~ msgstr "Email contains"
+
+#~ msgid "Cronjob not implemented"
+#~ msgstr "This cronjob is not active or not implemented."
+
+#~ msgid "Cronjob is running"
+#~ msgstr "The cronjob is currently being executed. Unable to start."
+
+#~ msgid "Cronjob has started"
+#~ msgstr ""
+#~ "The cronjob has started successfully. You will receive an email "
+#~ "notification when it's done."
+
+#~ msgid "delivery_date_not_set_fallback_notice"
+#~ msgstr "Delivery date was not set, using first available date: "
+
+#~ msgid "user_delivery_date_not_used_notice"
+#~ msgstr ""
+#~ "The delivery date chosen by the user was not used due to a delay in sale "
+#~ "verification. "
+
+#~ msgid "Inventario por local"
+#~ msgstr "Inventory by place"
+
+#~ msgid "Inventario por sección"
+#~ msgstr "Inventory by section"
+
+#~ msgid "total_cost"
+#~ msgstr "total cost"
+
+#~ msgid "Legal entity"
+#~ msgstr "Persona jurídica"
+
+#~ msgid "Natural person"
+#~ msgstr "Persona natural"
