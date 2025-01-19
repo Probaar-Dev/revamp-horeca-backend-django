@@ -4,9 +4,12 @@ aptPkgs = [
     "tzdata",
     "binutils",
     "libproj-dev",
-    "gdal-bin"
+    "gdal-bin",
+    "libgdal-dev",  # Add this
+    "python3-gdal"  # Add this
 ]
 
 [environment]
-GDAL_LIBRARY_PATH = "/usr/lib/libgdal.so"
-GEOS_LIBRARY_PATH = "/usr/lib/libgeos_c.so"
+GDAL_LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu/libgdal.so"  # Updated path
+GEOS_LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu/libgeos_c.so"  # Updated path
+PROJ_LIB = "/usr/share/proj"  # Add this
