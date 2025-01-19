@@ -17,5 +17,6 @@ cmds = [
 ]
 
 [environment]
+USE_NIXPACKS = "True"
 GDAL_LIBRARY_PATH = "/usr/lib/libgdal.so.30"
 GEOS_LIBRARY_PATH = "/usr/lib/libgeos_c.so.30"
