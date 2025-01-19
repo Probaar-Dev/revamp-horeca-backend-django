@@ -166,9 +166,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# GeoDjango settings
-GDAL_LIBRARY_PATH = os.getenv('GDAL_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/libgdal.so')
-GEOS_LIBRARY_PATH = os.getenv('GEOS_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/libgeos_c.so')
-
-if not all([GDAL_LIBRARY_PATH, GEOS_LIBRARY_PATH]):
-    raise ImproperlyConfigured("GDAL or GEOS library paths are not set correctly")

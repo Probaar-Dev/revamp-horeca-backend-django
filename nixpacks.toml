@@ -5,36 +5,17 @@ aptPkgs = [
     "binutils",
     "libproj-dev",
     "gdal-bin",
-    "python3-gdal",
-    "libgdal-dev",
-    "postgresql-client",
-    "postgresql-common",
-    "libpq-dev",
-    "python3-dev",
-    "postgis",
-    "libgeos-dev"
 ]
 
-[phases.build]
-nixPkgs = [
-    "python312",
-    "pythonPackages.pip",
-    "gdal",
-    "proj",
-    "geos",
-    "postgresql"
-]
+[phases.install]
 cmds = [
-    "python -m pip install --upgrade pip",
-    "python -m pip install 'django[gdal]' psycopg2-binary"
+    "python -m venv /opt/venv",
+    ". /opt/venv/bin/activate",
+    "pip install --upgrade pip",
+    "echo 'GDAL library location:' $(find /usr -name 'libgdal.so*')", # This will print the location
+    "pip install -r requirements.txt"
 ]
 
 [environment]
 GDAL_LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu/libgdal.so"
 GEOS_LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu/libgeos_c.so"
-PYTHONPATH = "${pythonPackages.django}/lib/python3.12/site-packages:$PYTHONPATH"
-GDAL_DATA = "/usr/share/gdal"
-PROJ_LIB = "/usr/share/proj"
-
-[start]
-cmd = "python manage.py runserver 0.0.0.0:$PORT"
