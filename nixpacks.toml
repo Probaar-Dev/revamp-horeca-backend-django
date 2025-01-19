@@ -5,8 +5,13 @@ aptPkgs = [
     "binutils",
     "libproj-dev",
     "gdal-bin",
-    "libgdal-dev",  # Add this
-    "python3-gdal"  # Add this
+    "libgdal-dev",
+    "python3-gdal",  # This installs the pre-built Python bindings
+    "python3-pip",
+    "python3-dev",
+    "gcc",
+    "g++",
+    "libpq-dev"
 ]
 
 [phases.install]
@@ -14,11 +19,12 @@ cmds = [
     "python -m venv /opt/venv",
     ". /opt/venv/bin/activate",
     "pip install --upgrade pip",
-    "pip install GDAL==$(gdal-config --version)",  # Install matching GDAL Python package
+    # Remove the GDAL install command since we're using python3-gdal
     "pip install -r requirements.txt"
 ]
 
 [environment]
+PYTHONPATH = "/usr/lib/python3/dist-packages" # Add this to find system-installed GDAL
 GDAL_LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu/libgdal.so"
 GEOS_LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu/libgeos_c.so"
 PROJ_LIB = "/usr/share/proj"
