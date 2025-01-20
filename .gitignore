@@ -134,3 +134,5 @@ pyrightconfig.json
 
 # IDEA
 .idea
+
+staticfiles/
