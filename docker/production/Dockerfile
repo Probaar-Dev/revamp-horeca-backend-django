@@ -8,6 +8,13 @@ ENV LANGUAGE=en_US.UTF-8
 ENV APP_ENV=production
 ENV TZ=America/Lima
 
+ARG PGDATABASE
+ARG PGUSER
+ARG PGPASSWORD
+ARG PGHOST
+ARG PGPORT
+
+
 RUN : \
     && apt update \
     && apt install -y --no-install-recommends \
