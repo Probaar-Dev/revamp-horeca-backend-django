@@ -5,8 +5,20 @@ aptPkgs = [
     "binutils",
     "libproj-dev",
     "gdal-bin",
+    "libgdal-dev",
+    "python3-gdal",
+    "python3-pip",
+    "python3-dev",
+    "gcc",
+    "g++",
+    "libpq-dev",
     "libheif-dev",     # Add this for libheif.so.1
     "libheif1",        # Add this for the runtime library
+    "libsqlite3-dev",  # Common dependency
+    "libgeos-dev",     # GEOS dependency
+    "libproj-dev",     # PROJ dependency
+    "proj-data",       # PROJ data
+    "proj-bin"         # PROJ binary tools
 ]
 
 [phases.install]
