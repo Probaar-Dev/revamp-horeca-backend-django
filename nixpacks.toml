@@ -5,7 +5,8 @@ aptPkgs = [
     "binutils",
     "libproj-dev",
     "gdal-bin",
-    "libheif-dev"
+    "libheif-dev",     # Add this for libheif.so.1
+    "libheif1",        # Add this for the runtime library
 ]
 
 [phases.install]
