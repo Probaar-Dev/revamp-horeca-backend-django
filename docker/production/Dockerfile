@@ -17,7 +17,6 @@ ARG PGPORT
 
 RUN : \
     && apt update \
-    && apt-get upgrade libicu \
     && apt install -y --no-install-recommends \
         locales \
         gettext \
@@ -25,6 +24,7 @@ RUN : \
         binutils \
         libproj-dev \
         gdal-bin \
+        libicu72 \
     && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen \
     && :
