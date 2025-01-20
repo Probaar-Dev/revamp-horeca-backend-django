@@ -3,7 +3,7 @@
 set -e
 
 BASE_NAME=probaar
-BASE_DIR=/srv
+BASE_DIR=/app
 PROJECTDIR=$BASE_DIR/src
 SOCKFILE=$BASE_DIR/run/gunicorn.sock
 LOGS_DIR=/var/log/probaar
