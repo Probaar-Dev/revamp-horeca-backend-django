@@ -5,6 +5,7 @@ aptPkgs = [
     "binutils",
     "libproj-dev",
     "gdal-bin",
+    "libheif-dev"
 ]
 
 [phases.install]
