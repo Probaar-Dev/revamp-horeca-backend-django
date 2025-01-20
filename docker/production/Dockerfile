@@ -17,6 +17,7 @@ ARG PGPORT
 
 RUN : \
     && apt update \
+    && apt-get upgrade libicu \
     && apt install -y --no-install-recommends \
         locales \
         gettext \
