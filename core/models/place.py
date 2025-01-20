@@ -21,12 +21,13 @@ class Place(get_active_mixin()):
         GENERAL = PLACE_GENERAL, _("general")
         WAREHOUSE = PLACE_WAREHOUSE, _("warehouse")
 
-    # org = models.ForeignKey(
-    #     'core.Organization',
-    #     on_delete=models.PROTECT,
-    #     verbose_name=_("organization"),
-    #     related_name="places"
-    # )
+    org = models.ForeignKey(
+        'core.Organization',
+        on_delete=models.PROTECT,
+        verbose_name=_("organization"),
+        related_name="places",
+        null=True
+    )
 
     type = models.SlugField(
         choices=PlaceType.choices,
@@ -114,12 +115,12 @@ class Place(get_active_mixin()):
         if self.type != self.PlaceType.STORE:
             return
 
-        from inventory.models import Label
-
-        label_set = Label.objects.all()
-        for label in label_set:
-            self.price_set.get_or_create(label=label)
-            self.stock_set.get_or_create(label=label)
+        # from inventory.models import Label
+        #
+        # label_set = Label.objects.all()
+        # for label in label_set:
+        #     self.price_set.get_or_create(label=label)
+        #     self.stock_set.get_or_create(label=label)
 
 
 @receiver(post_save, sender=Place)
