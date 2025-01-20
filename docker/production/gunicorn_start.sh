@@ -2,15 +2,15 @@
 
 set -e
 
-BASE_NAME=probaar
+BASE_NAME=horeca
 BASE_DIR=/app
 PROJECTDIR=$BASE_DIR
 SOCKFILE=$BASE_DIR/run/gunicorn.sock
-LOGS_DIR=/var/log/probaar
-USER=probaar
-GROUP=probaar
+LOGS_DIR=/var/log/horeca
+USER=horeca
+GROUP=horeca
 NUM_WORKERS=3
-DJANGO_WSGI_MODULE=probaar.wsgi
+DJANGO_WSGI_MODULE=horeca.wsgi
 
 cd $PROJECTDIR
 
@@ -26,6 +26,5 @@ gunicorn ${DJANGO_WSGI_MODULE}:application \
   --bind 0.0.0.0:8000 \
   --log-file=$LOGS_DIR/gunicorn.log \
   --access-logfile=$LOGS_DIR/gunicorn.access.log \
-  --timeout 60 \
+  --timeout 120 \
   --config=${PROJECTDIR}/${BASE_NAME}/gunicorn-config.py
-

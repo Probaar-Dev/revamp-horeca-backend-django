@@ -31,13 +31,13 @@ RUN : \
 
 WORKDIR /app
 
-# The 'probaar' user will be used to run the application
+# The 'horeca' user will be used to run the application
 # The whole /app will be owned by said user
-RUN mkdir -p /var/log/probaar && \
-    groupadd -g 1000 probaar && \
-    useradd -u 1000 -g 1000 -d /srv probaar && \
-    chown -hR probaar:probaar . && \
-    chown -hR probaar:probaar /var/log/probaar
+RUN mkdir -p /var/log/horeca && \
+    groupadd -g 1000 horeca && \
+    useradd -u 1000 -g 1000 -d /srv horeca && \
+    chown -hR horeca:horeca . && \
+    chown -hR horeca:horeca /var/log/horeca
 
 # Python and dependencies installation
 
@@ -48,9 +48,9 @@ RUN : \
     && pip install --no-cache-dir -r requirements.txt \
     && :
 
-COPY --chown=probaar:probaar . .
+COPY --chown=horeca:horeca . .
 
-USER probaar
+USER horeca
 RUN : \
     && python manage.py collectstatic --no-input \
     && python manage.py makemessages --all \
@@ -59,9 +59,9 @@ RUN : \
 
 USER root
 
-RUN ln -sf /dev/stdout /var/log/probaar/gunicorn.access.log
+RUN ln -sf /dev/stdout /var/log/horeca/gunicorn.access.log
 
-USER probaar
+USER horeca
 
 ENTRYPOINT ["./docker/production/entrypoint.sh"]
 
