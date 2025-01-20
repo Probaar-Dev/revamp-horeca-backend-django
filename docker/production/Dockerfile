@@ -24,13 +24,11 @@ RUN : \
 WORKDIR /app
 
 # The 'probaar' user will be used to run the application
-# The whole /srv will be owned by said user
-RUN : \
-    groupadd -g 1000 probaar \
-    && useradd -u 1000 -g 1000 -d /srv probaar \
-    && chown -hR probaar:probaar . \
-    && chown -hR probaar:probaar /var/log/probaar \
-    && :
+# The whole /app will be owned by said user
+RUN groupadd -g 1000 probaar && \
+    useradd -u 1000 -g 1000 -d /srv probaar && \
+    chown -hR probaar:probaar . && \
+    chown -hR probaar:probaar /var/log/probaar
 
 # Python and dependencies installation
 
